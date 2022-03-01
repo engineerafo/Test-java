@@ -24,7 +24,7 @@ repositories {
 
 azurefunctions {
     resourceGroup = 'java-functions-group'
-    appName = 'azure-functions-sample'
+    appName = 'Afofunction'
     pricingTier = 'Consumption'
     region = 'westus'
     runtime {
