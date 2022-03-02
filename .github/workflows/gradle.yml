@@ -44,7 +44,7 @@ jobs:
     # Path to package or folder. *.zip or a folder to deploy
         
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
-        package: '${{ github.workspace }}/target/
+        package: '${{ github.workspace }}/target/'
 
 
 
