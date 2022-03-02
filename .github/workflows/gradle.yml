@@ -35,12 +35,7 @@ jobs:
       with:
         arguments: build
         
-    - name: upload the artifacts   
-      uses: actions/upload-artifact@v2.3.1
-      with:
-        name: package
-        path: '${{ github.workspace }}/target/
-
+    
     - name: Deploy to Azure Functions
       uses: azure/webapps-deploy@v2
       with:
