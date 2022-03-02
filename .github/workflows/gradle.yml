@@ -35,9 +35,13 @@ jobs:
         arguments: build
         
     - uses: actions/upload-artifact@v2
+    
       with:
        name: Hello-World
        path: /home/runner/work/Trimble-java
+       
+    - name: Change artifact permission
+      run: chmod +x ./home/runner/work/Trimble-java
        
     - name: Deploy to Azure Functions
       uses: Azure/functions-action@v1.4.4
@@ -46,6 +50,7 @@ jobs:
         app-name: Hello-World
     # Path to package or folder. *.zip or a folder to deploy
         package: /home/runner/work/Trimble-java
+        run: chmod +x ./home/runner/work/Trimble-java
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
 
 
