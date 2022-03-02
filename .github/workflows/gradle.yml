@@ -38,16 +38,15 @@ jobs:
     
         
     - uses: actions/upload-artifact@v2
-    
       with:
-       name: Hello-World
+       name: Hello-Java
        path: '${{ github.workspace }}/target/
 
     - name: Deploy to Azure Functions
       uses: azure/webapps-deploy@v2
       with:
     # Name of the Azure Function App
-        app-name: Hello-World
+        app-name: Hello-Java
     # Path to package or folder. *.zip or a folder to deploy
         
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
