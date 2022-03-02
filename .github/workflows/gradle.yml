@@ -49,8 +49,7 @@ jobs:
     # Name of the Azure Function App
         app-name: Hello-World
     # Path to package or folder. *.zip or a folder to deploy
-        package: /home/runner/work/Trimble-java
-        run: chmod +x /home/runner/work/Trimble-java
+        package: Hello-World
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
 
 
