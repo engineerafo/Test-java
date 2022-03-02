@@ -41,9 +41,8 @@ jobs:
     
       with:
        name: Hello-World
-       path: '${{ github.workspace }}/target/*.jar'
-       
-      
+       path: '${{ github.workspace }}/target/
+
     - name: Deploy to Azure Functions
       uses: azure/webapps-deploy@v2
       with:
@@ -52,7 +51,7 @@ jobs:
     # Path to package or folder. *.zip or a folder to deploy
         
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '${{ github.workspace }}/target/
 
 
 
