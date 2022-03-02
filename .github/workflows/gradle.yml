@@ -43,6 +43,10 @@ jobs:
     - name: Change artifact permission
       run: chmod +x /home/runner/work/Trimble-java
        
+    - name: publish
+      run:  gradle publish /home/runner/work/Trimble-java
+       
+      
     - name: Deploy to Azure Functions
       uses: Azure/functions-action@v1.4.4
       with:
