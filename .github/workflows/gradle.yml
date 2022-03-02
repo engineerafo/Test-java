@@ -38,7 +38,7 @@ jobs:
     
       with:
        name: Hello-World
-       path: ${{ github.workspace }}/target/*.jar
+       path: ${{ github.workspace }}/target/*.tar
        
       
     - name: Deploy to Azure Functions
