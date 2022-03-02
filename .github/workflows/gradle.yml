@@ -35,12 +35,10 @@ jobs:
       with:
         arguments: build
         
-    
-        
     - uses: actions/upload-artifact@v2
       with:
-       name: Hello-Java
-       path: '${{ github.workspace }}/target/
+        name: Hello-Java
+        path: '${{ github.workspace }}/target/
 
     - name: Deploy to Azure Functions
       uses: azure/webapps-deploy@v2
