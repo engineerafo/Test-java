@@ -50,7 +50,7 @@ jobs:
     # Name of the Azure Function App
         app-name: Hello-World
     # Path to package or folder. *.zip or a folder to deploy
-        package: '${{ github.workspace }}/target/*.jar'
+        package: ${{ github.workspace }}/target/*.jar
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
 
 
