@@ -38,10 +38,7 @@ jobs:
     
       with:
        name: Hello-World
-       path: /home/runner/work/Trimble-java
-       
-    - name: Change artifact permission
-      run: chmod +x /home/runner/work/Trimble-java
+       path: ${{ github.workspace }}/target/*.jar
        
       
     - name: Deploy to Azure Functions
