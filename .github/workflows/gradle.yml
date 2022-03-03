@@ -35,6 +35,13 @@ jobs:
       with:
         arguments: build
         
+    - name : upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+       name: Package
+       path:  home/runner/work/Test-java/Test-java
+
+        
     
     - name: Deploy to Azure Functions
       uses: azure/webapps-deploy@v2
