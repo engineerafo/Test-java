@@ -44,7 +44,7 @@ jobs:
     # Path to package or folder. *.zip or a folder to deploy
         
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
-        package: /home/runner/work/test-java
+        package: home/runner/work/Test-java/Test-java
 
 
 
