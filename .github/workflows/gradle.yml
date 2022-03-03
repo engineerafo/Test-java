@@ -40,7 +40,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
     # Name of the Azure Function App
-        app-name: Hello-Java
+        app-name: Afofunction
     # Path to package or folder. *.zip or a folder to deploy
         
         publish-profile: ${{ secrets.PUBLISH_PROFILE}}
